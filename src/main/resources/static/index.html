@@ -1,0 +1,80 @@
+<!DOCTYPE html>
+<html>
+    <!-- 
+        Pagina Principal
+    -->
+    <head>
+        <!-- Tag meta obligatoria -->
+        <meta http-equiv=”Content-Type” content="text/html"; charset="UTF-8"/>
+
+        <!-- CSS Bootstrap -->
+        <link href = "./libs/boostrap.css" rel = "stylesheet">
+        
+        <title>Bienvenido al Cuestionario</title>
+
+        <!-- Recordatorio: . para aplicar a class y # para aplicar a id -->
+        <style>
+            
+            #myBody{
+                margin: 10px 50px 10px 50px ;
+            }
+
+            h1 {
+                text-align:center; 
+                font-size: large; 
+                font-weight: bold; 
+            }
+
+            h2 {
+                text-align:center; 
+                font-size: medium;
+            }
+        </style>
+    </head>
+
+    <body id = "myBody" style = "background-color: aliceblue;">
+        <h1>Bienvenido a mi Pagina</h1>
+        <h2>Por favor, rellena la informacion obligatoria para continuar</h2>
+
+        <form action = "send.html" method="post" id = "signup">
+            <div class = "field">
+                <label for="name">Nombre(s):</label>
+                <input type="text" id="name" name="name" placeholder="Nombre" size = "20" maxlength = "20">
+                <small></small>
+            </div>
+
+            <br> 
+
+            <div class = "field">
+                <label for="lname">Appellido(s):</label>
+                <input type="text" id="lname" name="lname" placeholder="Apellido" size = "20" maxlength = "20">
+                <small></small>
+            </div>
+
+            <br>
+
+            <div class = "field">
+                <label for="opinion">Dia que has visitado el web</label>
+                <input type = "date" id = "visit-time" name = "visit-time" value="" min="2000-01-01" max="2030-12-31">
+                <small></small>
+            </div>
+
+            <br>
+
+            <p align = "middle">
+                <button type= "button" id = "submit" class = "btn btn-primary">Ir a Cuestionario</button>
+            </p>
+
+            <!-- EXPERIMENTANDO CON JDBC TEMPLATE -->
+            <div id = "div_exp">
+                <p id = "p_exp"></p>
+            </div>
+        </form>
+        
+    </body>
+
+    <!-- JS -->
+    <script src = "./libs/jquery.js"></script>
+    <script src = "./libs/bootstrap.js"></script>
+    <script src = "./js/index.js"></script>
+</html>

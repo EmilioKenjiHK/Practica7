@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html>
+    <!-- 
+        Fin de Pagina
+    -->
+    <head>
+        <!-- Tag meta obligatoria -->
+        <meta http-equiv=”Content-Type” content="text/html"; charset="UTF-8"/>
+
+        <!-- CSS Bootstrap -->
+        <link href = "./libs/boostrap.css" rel = "stylesheet">
+        
+        <title>Fin de Pagina</title>
+
+        <!-- Recordatorio: . para aplicar a class y # para aplicar a id -->
+        <style>
+            
+            #myBody{
+                margin: 10px 50px 10px 50px ;
+            }
+
+            #link{
+                font-size: medium;
+            }
+
+            h1 {
+                text-align:center; 
+                font-size: large; 
+                font-weight: bold; 
+            }
+        </style>
+    </head>
+
+    <body id = "myBody" style = "background-color: aliceblue;">
+        <h1>Gracias por responder al Cuestionario</h1>
+
+        <br>
+
+        <p>Si desea cambiar la respuesta, pulse a este boton: (Se borrará la respuesta previa)</p>
+        <p align = "middle">
+            <button type = "button" class = "btn btn-info" id = "reset" >Cambiar Respuesta</button>
+        </p>
+
+        <br>
+
+        <p>Si desea dar dinero para apoyar este web, puede ir a neustra tienda mediante este link:</p>
+        <p align = "middle"><a href = "./shop.html" id = "link">TIENDA</a></p>
+
+
+        <br> 
+
+        <p>Si desea dejar otra persona responder este cuestionario, puede volver al principio con este boton:</p>
+        <p align = "middle">
+            <button type = "button" class = "btn btn-info" id = "back" >Volver al Inicio</button>
+        </p>
+    </body>
+
+    <!-- JS -->
+    <script src = "./libs/jquery.js"></script>
+    <script src = "./libs/bootstrap.js"></script>
+    <script src = "./js/fin.js"></script>
+</html>
